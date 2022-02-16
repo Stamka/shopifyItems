@@ -68,7 +68,8 @@ function getAllProducts(params,itemsCount = 0){
             if (params!== undefined){
                 getAllProducts(params,itemsCount);
             }else{
-                console.log("Total items fetched and recorded to file: " + itemsCount);
+                console.log(`Total items fetched and recorded to file: ${itemsCount}
+                \rPath to file: ${logFilePath}`);
                 return;
             }
         });
